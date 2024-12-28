@@ -145,7 +145,7 @@ class BankingSystemManagement {
 
 				}catch(Exception e){
 
-					System.out.println("insufficient balance\n");
+					System.out.println("Error: entered negative amount, please try again\n");
 				}
 
 			}else if(!bankAccounts.containsKey(destinationAccountId)){
@@ -164,7 +164,7 @@ class BankingSystemManagement {
 			if(bankAccounts.containsKey(accountId))
 			{
 				BankAccount currentAccount = bankAccounts.get(accountId);
-				System.out.println(String.format("account: %s has balance: %.2f\n", currentAccount.accountId, currentAccount.amount));
+				System.out.println(String.format("account: %s has current balance of: %.2f\n", currentAccount.accountId, currentAccount.amount));
 			}else{
 				
 				System.out.println(String.format("account: %s is not in the system\n", accountId));

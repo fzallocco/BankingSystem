@@ -14,6 +14,7 @@ class BankingSystemManagementTest {
 		int userInput = scn.nextInt();
 		while(userInput != -1)
 		{
+			System.out.println("Banking System: Enter any integer to proceed or -1 to end program\n");
 			System.out.println("1) View account details\n");
 			System.out.println("2) Deposit funds into account\n");
 			System.out.println("3) Withdraw funds from account\n");
